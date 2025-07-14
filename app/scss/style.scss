@@ -206,13 +206,13 @@ body {
   }
   &__title {
     margin-bottom: 50px;
-    font-size: 45px;
+    font-size: 43px;
     @extend %lora-400;
   }
   &__text {
     color: vars.$color-text-muted;
   }
-  &__text+ .new-collection__text {
+  &__text + .new-collection__text {
     margin-top: 25px;
   }
   &__btn {
@@ -246,5 +246,112 @@ body {
     margin-bottom: 40px;
   }
 }
+
+.join-us {
+  background-color: vars.$bg-primary;
+  &__inner {
+    display: flex;
+    gap: 40px;
+    padding: 0 40px;
+  }
+  &__img {
+    max-width: 540px;
+  }
+  &__box {
+    padding: 40px 0 40px;
+  }
+  &__title {
+    text-transform: uppercase;
+    @extend %lora-400;
+    margin-bottom: 20px;
+    font-size: 45px;
+  }
+  &__text {
+    @extend %lora-400;
+    font-size: 30px;
+    margin-bottom: 25px;
+  }
+
+  &__input {
+    width: 100%;
+    display: block;
+    border: none;
+    border-bottom: 1px solid vars.$color-text-muted;
+    padding-bottom: 10px;
+    background-color: transparent;
+    color: vars.$color-text-muted;
+  }
+
+  &__input + .join-us__input {
+    padding-top: 10px;
+    
+  }
+  &__btn {
+    width: 100%;
+    display: block;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    background-color: vars.$color-accent;
+    text-transform: uppercase;
+    color: #fff;
+    padding: 12px;
+    border: none;
+  }
+  &__form-caption {
+    font-size: 11px;
+  }
+}
+
+
+.designer {
+  padding: 150px 0 210px;
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 40px;
+  }
+  &__content {
+    max-width: 404px;
+  }
+  &__title {
+    @extend %lora-400;
+    font-size: 45px;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+  }
+  &__text {
+    color: vars.$color-text-muted;
+    margin-bottom: 20px;
+    font-size: 16px;
+    margin-bottom: 25px;
+  }
+  &__box {
+    position: relative;
+    text-align: center;
+  }
+  &__img {
+    margin-bottom: 40px;
+  }
+  &__caption {
+    position: absolute;
+    @extend %lora-400;
+    padding: 20px 18px;
+    border: 3px solid vars.$bg-primary;
+    top: 180px;
+    left: -160px;
+    width: 296px;
+    background-color: #fff;
+
+  }
+  &__link {
+    display: inline-block;
+    font-size: 16px;
+    padding: 10px 93px;
+    color: vars.$color-text-muted;
+    border: 1px solid vars.$bg-primary;
+    
+  }
+}
+
 
 
