@@ -1029,9 +1029,7 @@ body {
     @extend %lora-400;
     font-size: 32px;
   }
-  &__select-form {
-
-  }
+  
   &__search {
     margin-top: 1px;
   }
@@ -1059,25 +1057,20 @@ body {
     display: flex;
     gap: 20px;
   }
-  &__nav-btns-item {}
+ 
   &__nav-btn {
     padding: 0;
 
   }
-  &__nav-btn-grid {}
-  &__nav-btn-line {}
-  &__items {}
+ 
   &__list {
     display: grid;
     gap: 50px  20px;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 1fr, 1fr;
   }
-  &__item {}
-  &__item-link-img {
-    
-  }
-  &__item-img {}
+ 
+
   &__item-content {
     padding-top: 20px;
   }
@@ -1118,5 +1111,104 @@ body {
       right: 3;
       top: 8;
     }
+  }
+}
+
+.blog-one {
+  margin-bottom: 10px;
+  &__content {
+    b:first-of-type  {
+      margin-bottom: 60px;
+    }
+    picture:first-of-type {
+      border-top: 1px solid #dcddde;
+      border-bottom: 1px solid #dcddde;
+      padding: 40px 0 40px;
+      margin-bottom: 40px;
+    }
+    picture{
+      margin-bottom: 50px;
+    }
+    h1 {
+      @extend %lora-400;
+      font-size: 96px;
+      text-transform: uppercase;
+      line-height: 1.2;
+    }
+    
+    b {
+      @extend %lora-400;
+      font-size: 32px;
+      margin-bottom: 20px;
+      max-width: 1220px; 
+      display: inline-block;
+    }
+  
+    & > p {
+      margin-bottom: 40px;
+      max-width: 1220px;
+    }
+
+    h3 {
+      margin-bottom: 40px;
+      @extend %lora-500;
+      font-size: 40px;
+    }
+    li:has(ul) {
+      list-style-type: none;
+    }
+    & > ul {
+      margin-bottom: 40px;
+      padding-left: 40px;
+      list-style: disc;
+
+      ul {
+        padding-left: 25px;
+        list-style: disc;
+      }
+
+    }
+  }
+  &__stats {
+    display: flex;
+    padding: 22px 0 40px;
+    align-items: center;
+  }
+  &__category {
+    padding: 8px 24px;
+    font-size: 14px;
+    border: 1px solid #dcddde;
+    margin-right: 40px;
+  }
+  &__date {
+    font-size: 18px;
+    @extend %inter-400;
+    opacity: 0.3;
+    padding-right: 20px;
+    margin-right: 22px;
+    position: relative;
+    &::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 2px;
+      height: 29px;
+      background-color: #dcddde;
+    }
+  }
+  &__stats-list {
+    opacity: 0.3;
+    display: flex;
+    gap: 16px;
+    align-items: center;
+  }
+  &__stats-item {
+  }
+  &__stats-link {
+    display: flex;
+    gap: 4px;
+    align-items: center;
+    
   }
 }
