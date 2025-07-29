@@ -876,8 +876,7 @@ body {
     margin: 0 auto;
     padding: 0 30px;
   }
-  &__slider-wrapper {
-  }
+
   &__slide {
     text-align: center;
   }
@@ -1197,8 +1196,7 @@ body {
     gap: 16px;
     align-items: center;
   }
-  &__stats-item {
-  }
+
   &__stats-link {
     display: flex;
     gap: 4px;
@@ -1231,10 +1229,7 @@ body {
 
     width: calc(100vw - (100vw - 1500px) / 2);
   }
-  &__slider-wrapper {
-  }
-  &__slide {
-  }
+
   &__slider-addreview {
     display: inline-block;
     font-size: 16px;
@@ -1264,8 +1259,7 @@ body {
     display: flex;
     gap: 10px;
   }
-  &__item-avatar-img {
-  }
+
   &__item-text {
     margin-bottom: 24px;
   }
@@ -1313,8 +1307,7 @@ body {
   display: flex;
   gap: 10px;
   align-items: center;
-  &__number {
-  }
+
   &__list {
     display: flex;
     align-items: center;
@@ -1357,8 +1350,6 @@ body {
     width: 270px;
     padding: 20px;
     border: 1px solid vars.$color-text-muted;
-  }
-  &__filter-form {
   }
 
   &__filter-clean {
@@ -1417,8 +1408,7 @@ body {
     display: block;
     margin-bottom: 15px;
   }
-  .check-box {
-  }
+
   .check-style {
     margin-top: -1px;
   }
@@ -1426,8 +1416,7 @@ body {
     margin-bottom: 15px;
     display: block;
   }
-  .radio-box {
-  }
+
   .radio-style {
     margin-top: -1px;
   }
@@ -1436,10 +1425,7 @@ body {
   display: flex;
   align-items: center;
   gap: 10px;
-  &__item {
-  }
-  &__btn {
-  }
+
   &__container--grid {
     display: grid;
   }
@@ -1469,8 +1455,6 @@ body {
   }
 }
 .catalog-sort {
-  &__form {
-  }
   &__wrapper {
     position: relative;
     &::after {
@@ -1528,12 +1512,6 @@ body {
       color: vars.$color-primary;
       font-size: 11px;
     }
-  }
-  &__min {
-  }
-  &__max {
-  }
-  &__slider {
   }
 
   .noUi-target {
@@ -1598,5 +1576,257 @@ body {
       top: -19px;
       left: 16px;
     }
+  }
+}
+
+.checkout {
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 48px;
+  }
+  &__title {
+    @extend %lora-400;
+    font-size: 64px;
+  }
+  &__content {
+    display: flex;
+    gap: 80px;
+  }
+  &__info {
+    width: 100%;
+  }
+
+  &__info-item + .checkout__info-item {
+    margin-top: 80px;
+  }
+  &__info-title {
+    @extend %lora-400;
+    font-size: 40px;
+    padding-bottom: 20px;
+    margin-bottom: 32px;
+    border-bottom: 1px solid #dcddde;
+  }
+  &__infobox {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+  }
+  &__infobox-label {
+    display: block;
+  }
+  &__infobox-input {
+    display: block;
+    width: 100%;
+    margin-top: 12px;
+    border: 1px solid #dcddde;
+    font-size: 20px;
+    padding: 26px 32px;
+    &::placeholder {
+      opacity: 0.4;
+    }
+  }
+  &__infobox-wrapper {
+    position: relative;
+    &::before {
+      content: "";
+      position: absolute;
+      right: 34px;
+    }
+  }
+  &__infobox--marker {
+    &::before {
+      background-image: url(../images/marker.svg);
+      width: 18px;
+      height: 20px;
+      top: 65px;
+      opacity: 0.4;
+    }
+  }
+
+  &__infobox--arrow {
+    &::before {
+      background-image: url(../images/select-arrow.svg);
+      width: 20px;
+      height: 12px;
+      top: 71px;
+      opacity: 0.4;
+    }
+  }
+
+  &__infobox-select {
+    display: block;
+    width: 100%;
+    margin-top: 12px;
+    border: 1px solid #dcdddc;
+    font-size: 20px;
+    padding: 26px 64px 26px 32px;
+    color: rgba($color: vars.$color-accent, $alpha: 0.4);
+    appearance: none;
+  }
+
+  &__info-radio {
+    padding: 26px 0;
+    border-bottom: 1px solid #dcdddc;
+    @extend%inter-400;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .radio-label:has(.radio-box:checked) + .checkout__info-delprice {
+    opacity: 1;
+  }
+  .radio-box:checked + .radio-style + .radio-name {
+    opacity: 1;
+  }
+
+  .radio-style {
+    margin-top: 7px;
+  }
+  .radio-name {
+    font-size: 24px;
+    opacity: 0.4;
+  }
+  .radio-text {
+    display: block;
+    font-size: 14px;
+    margin-top: 8px;
+    opacity: 0.4;
+  }
+  &__info-delprice {
+    opacity: 0.4;
+    font-size: 24px;
+  }
+  &__infobox-pay {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+  &__infobox-paycard {
+    display: grid;
+    gap: 24px;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  &__info-text {
+    margin: 32px 0;
+    font-size: 16px;
+    max-width: 560px;
+    opacity: 0.4;
+  }
+  &__info-btn {
+    text-transform: uppercase;
+    background-color: vars.$color-accent;
+    text-align: center;
+    display: block;
+    padding: 28px;
+    color: #fff;
+    width: 100%;
+  }
+  &__details {
+    min-width: 616px;
+  }
+  &__details-title {
+    @extend %lora-400;
+    font-size: 40px;
+    padding-bottom: 20px;
+    margin-bottom: 32px;
+    border-bottom: 1px solid #dcddde;
+  }
+  &__details-items {
+    margin-bottom: 123px;
+  }
+  &__details-itemsline {
+    background-color: vars.$bg-primary;
+    padding: 15px 18px 15px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__details-quantity {
+    font-size: 16px;
+  }
+  &__details-del {
+  }
+  &__item {
+    padding: 30px 0;
+    margin: 0 10px;
+    border-bottom: 1px solid vars.$bg-primary;
+    display: flex;
+    gap: 20px;
+  }
+  &__item-img {
+    min-width: 140px;
+  }
+  &__item-box {
+    position: relative;
+    width: 100%;
+  }
+  &__item-title {
+    @extend %lora-400;
+    margin-bottom: 40px;
+  }
+  &__item-list {
+    font-size: 16px;
+  }
+  &__item-listbox {
+    display: flex;
+    margin-bottom: 10px;
+    &:last-child {
+      margin-top: 40px;
+      @extend %opensans-700;
+      justify-content: space-between;
+    }
+  }
+  &__item-term {
+    @extend %opensans-700;
+  }
+  &__item-difinition {
+    margin-left: 10px;
+  }
+  &__item-del {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+}
+
+.order {
+  padding: 60px 40px;
+  border: 1px solid #dcdddc;
+  &__title {
+    @extend %lora-400;
+    font-size: 32px;
+    padding-bottom: 20px;
+    margin-bottom: 32px;
+    border-bottom: 1px solid #dcddde;
+  }
+  &__list {
+    margin-bottom: 80px;
+  }
+  &__list-box {
+    opacity: 0.6;
+    font-size: 24px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &:last-child {
+      opacity: 1;
+      font-size: 32px;
+      margin-bottom: 0;
+      margin-top: 32px;
+    }
+  }
+  &__list-term {
+  }
+  &__list-difinition {
+  }
+  &__link {
+    text-transform: uppercase;
+    display: block;
+    text-align: center;
+    padding: 30px;
+    border: 1px solid vars.$color-accent;
   }
 }
