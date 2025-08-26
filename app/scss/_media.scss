@@ -344,6 +344,18 @@
     margin-bottom: 50px;
     font-size: 30px;
   }
+
+  .reviews__top-link {
+    font-size: 16px;
+  }
+
+  .reviews__top-title {
+    font-size: 38px;
+  }
+
+  .reviews {
+    padding-bottom: 60px;
+  }
 }
 
 @media (max-width: 650px) {
@@ -583,6 +595,8 @@
   .appointment {
     background-position: center 97px;
   }
+
+
 }
 
 @media (max-width: 470px) {
@@ -731,5 +745,21 @@
   .appointment {
     background-position: right 500px;
     background-size: 164px;
+  }
+
+  .reviews__top-title {
+    font-size: 24px;
+  }
+
+  .reviews__top-link {
+    font-size: 14px;
+  }
+
+  .reviews__slider {
+    margin-bottom: 70px;
+  }
+
+  .reviews__item {
+    padding: 15px 10px;
   }
 }
