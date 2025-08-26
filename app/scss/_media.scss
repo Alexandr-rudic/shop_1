@@ -1,3 +1,22 @@
+@media (max-width: 1366px) {
+  .blog-main__inner {
+    gap: 20px;
+  }
+
+  .blog-main__img {
+    width: auto;
+    max-width: 540px;
+  }
+
+  .blog-main__category {
+    margin-bottom: 16px;
+  }
+
+  .blog-main__text {
+    margin-bottom: 40px;
+  }
+}
+
 @media (max-width: 1200px) {
   .new-collection__img {
     img {
@@ -130,6 +149,22 @@
   .appointment__box {
     padding: 0;
     gap: 20px;
+  }
+
+  .blog-main__inner {
+    flex-direction: column;
+  }
+
+  .blog-main__text {
+    max-width: 100%;
+  }
+
+  .blog__nav {
+    gap: 10px 20px;
+  }
+
+  .blog__nav-btns {
+    margin-left: 50px;
   }
 }
 
@@ -356,6 +391,52 @@
   .reviews {
     padding-bottom: 60px;
   }
+
+  .blog__list {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+
+  .blog {
+    padding-bottom: 60px;
+  }
+
+  .blog-main__link {
+    padding: 14px 40px;
+  }
+
+  .blog-main__text {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+
+  .blog__item-title {
+    font-size: 18px;
+  }
+
+  .blog__nav {
+    flex-wrap: wrap;
+  }
+
+  .blog__nav-title {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .blog__select-form,
+  .blog__search {
+    width: 48%;
+  }
+
+  .blog__nav-btns {
+    margin-left: auto;
+    margin-top: 20px;
+  }
+
+  .select,
+  .blog__search-form {
+    width: 100%;
+  }
 }
 
 @media (max-width: 650px) {
@@ -464,6 +545,20 @@
 
   .our-advantages__inner {
     padding: 24px 0;
+  }
+
+  .blog-main__img {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .blog-main__title a {
+    margin-bottom: 20px;
+    font-size: 34px;
+  }
+
+  .blog__list {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
@@ -595,8 +690,17 @@
   .appointment {
     background-position: center 97px;
   }
+}
 
+@media (max-width: 540px) {
+  .blog__nav-btns {
+    display: none;
+  }
 
+  .blog__select-form,
+  .blog__search {
+    width: 100%;
+  }
 }
 
 @media (max-width: 470px) {
@@ -761,5 +865,17 @@
 
   .reviews__item {
     padding: 15px 10px;
+  }
+
+  .blog__list {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .blog-main__title a {
+    font-size: 28px;
+  }
+
+  .blog-main__link {
+    font-size: 20px;
   }
 }
