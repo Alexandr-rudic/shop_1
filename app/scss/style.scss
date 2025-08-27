@@ -1331,6 +1331,9 @@ body {
 }
 
 .catalog {
+  &-popup {
+    display: none;
+  }
   &__top {
     display: flex;
     align-items: center;
