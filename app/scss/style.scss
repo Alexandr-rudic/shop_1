@@ -702,6 +702,9 @@ body {
 .product {
   padding-top: 50px;
   padding-bottom: 150px;
+  &__arrow {
+    display: none;
+  }
   &__inner {
     display: grid;
     gap: 40px;
@@ -896,6 +899,7 @@ body {
     @extend %opensans-700;
   }
   &__arrow {
+
     position: absolute;
     cursor: pointer;
     top: 40%;
